@@ -27,3 +27,5 @@ RUN chown -R www-data:www-data /var/www/html
 WORKDIR /var/www/html
 
 EXPOSE 80
+
+CMD php artisan serve --host=0.0.0.0 --port=8000
